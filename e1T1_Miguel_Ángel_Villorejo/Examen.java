@@ -11,6 +11,12 @@ public class Examen {
 	public static void main(String[] args) {
 		DecimalFormat deci=new DecimalFormat("#.00");
 		System.out.println("El volumen de la pirámide de lado 5 y altura 4 es de "+deci.format(ejercicio2(5,4)));
+		int[][] tabla=new int[4][4];
+		for (int i=0;i<tabla.length;i++){
+			for (int j=0;j<tabla.length;j++){
+				tabla[i][j]=i*i+j*j;
+			}
+		}
 	}
 	
 	public static void ejercicio1() {
